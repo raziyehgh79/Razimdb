@@ -1,0 +1,95 @@
+/* RaziMDb Design System Tokens */
+:root {
+  /* Colors */
+  --color-bg-main: #050505;
+  --color-bg-surface: #121212;
+  --color-bg-elevated: #1a1a1a;
+  --color-bg-overlay: rgba(0, 0, 0, 0.82);
+  --color-bg-card: #121212;
+  --color-bg-card-hover: #181818;
+  --color-bg-badge: rgba(255, 255, 255, 0.08);
+
+  /* Primary Accent: IMDb Golden Yellow */
+  --color-primary: #F5C518;
+  --color-primary-hover: #E2B616;
+  --color-primary-rgb: 245, 197, 24;
+  --color-star: #F5C518;
+
+  /* Typography Colors */
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #A3A3A3;
+  --color-text-muted: #8E8E93;
+  --color-text-inverse: #050505;
+
+  /* Borders & Dividers */
+  --color-border-subtle: rgba(255, 255, 255, 0.08);
+  --color-border-light: rgba(255, 255, 255, 0.15);
+  --color-border-focus: #F5C518;
+
+  /* Feedback Colors */
+  --color-error: #FF453A;
+  --color-error-bg: rgba(255, 69, 58, 0.12);
+  --color-success: #32D74B;
+
+  /* Typography Scales */
+  --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-md: 1rem;       /* 16px */
+  --font-size-lg: 1.125rem;   /* 18px */
+  --font-size-xl: 1.375rem;   /* 22px */
+  --font-size-2xl: 1.75rem;   /* 28px */
+  --font-size-3xl: 2.25rem;   /* 36px */
+  --font-size-4xl: 3rem;      /* 48px */
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.7;
+
+  /* Spacing Scale */
+  --space-2xs: 2px;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+
+  /* Border Radii */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-pill: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.7);
+  --shadow-glow: 0 0 20px rgba(245, 197, 24, 0.25);
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Layout */
+  --header-height: 68px;
+  --container-max-width: 1440px;
+  --container-gutter: 24px;
+
+  /* Z-Index Hierarchy */
+  --z-base: 1;
+  --z-card: 2;
+  --z-header: 100;
+  --z-dropdown: 200;
+  --z-modal: 500;
+  --z-toast: 1000;
+}

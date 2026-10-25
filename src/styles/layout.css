@@ -1,0 +1,118 @@
+/* Global App Shell & Layout Structure */
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* App Header / Top Navigation */
+.site-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-height);
+  background-color: rgba(5, 5, 5, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border-subtle);
+  z-index: var(--z-header);
+}
+
+.header-container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 var(--container-gutter);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+}
+
+/* Main Content Area */
+.main-content {
+  flex: 1 0 auto;
+  max-width: var(--container-max-width);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 var(--container-gutter) var(--space-3xl);
+}
+
+/* Container Full-width override for Hero */
+.main-content.has-hero {
+  padding-top: 0;
+}
+
+/* Site Footer */
+.site-footer {
+  margin-top: auto;
+  background-color: var(--color-bg-surface);
+  border-top: 1px solid var(--color-border-subtle);
+  padding: var(--space-xl) var(--container-gutter);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-xs);
+  text-align: center;
+}
+
+.footer-container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.footer-links {
+  display: flex;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-links a {
+  color: var(--color-text-secondary);
+  transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+  color: var(--color-primary);
+}
+
+/* Common Section Container */
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: var(--space-2xl) 0 var(--space-lg);
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+}
+
+.section-title::before {
+  content: "•";
+  color: var(--color-primary);
+  font-size: 1.2em;
+}
+
+/* Screen reader only utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
