@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>RaziMDb — Discover Movies, Cast, and Genres</title>
+  <meta name="description" content="RaziMDb is a production-grade cinematic movie discovery application crafted with native JavaScript, modern CSS, and REST API integration.">
+  <meta name="theme-color" content="#050505">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="RaziMDb — Movie Discovery">
+  <meta property="og:description" content="Explore movie ratings, scenes, cast credits, and genres with instant live search.">
+
+  <!-- Favicon: Golden Yellow RaziMDb Icon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23F5C518'/><text x='50%' y='21' font-family='sans-serif' font-weight='900' font-size='11' fill='%23050505' text-anchor='middle'>RMDb</text></svg>">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./src/styles/variables.css">
+  <link rel="stylesheet" href="./src/styles/reset.css">
+  <link rel="stylesheet" href="./src/styles/layout.css">
+  <link rel="stylesheet" href="./src/styles/components.css">
+  <link rel="stylesheet" href="./src/styles/pages.css">
+  <link rel="stylesheet" href="./src/styles/responsive.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Sticky Top Navigation Mount -->
+    <div id="navbar-root"></div>
+
+    <!-- SPA Main Content Mount -->
+    <main id="main-content" class="main-content" role="main" tabindex="-1"></main>
+
+    <!-- Global Footer -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-container">
+        <div class="brand-logo" style="font-size: 1rem; padding: 2px 8px; margin-bottom: 4px;">RaziMDb</div>
+        <p>© 2026 RaziMDb. Production-Quality Vanilla JavaScript Movie Discovery App.</p>
+        <div class="footer-links">
+          <a href="#/">Home</a>
+          <a href="#/genres/1">Genres</a>
+          <a href="https://moviesapi.ir" target="_blank" rel="noopener noreferrer">MoviesAPI.ir</a>
+          <a href="https://www.tvmaze.com" target="_blank" rel="noopener noreferrer">TVmaze (CC BY-SA)</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Application Module Entry Point -->
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
