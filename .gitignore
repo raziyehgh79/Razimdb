@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+.npm/
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Testing and Coverage
+test-results/
+playwright-report/
+blob-report/
+.playwright-mcp/
